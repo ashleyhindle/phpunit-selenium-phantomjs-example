@@ -61,7 +61,7 @@ class SeleniumTests extends PHPUnit_Extensions_Selenium2TestCase {
 
 	$this->screenshot(__DIR__ . '/screenshot.png');
 
-	$title = $this->byCssSelector('.AdaptiveSearchTitle-title');
+	$title = $this->byCssSelector('.AdaptiveSearchTitle');
         $this->assertEquals('cheese burger', $title->text());
     }
 
